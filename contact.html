@@ -1,0 +1,67 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+
+     <!-- link file css -->
+     <link rel="stylesheet" href="./css/style.css">
+
+  </head>
+  <body>
+    <nav>
+      <a class="fontVertical" href="./index.html">Home</a>
+      <div class="vertical"></div>
+      <a class="fontVertical" href="./education.html">Education</a>
+      <div class="vertical"></div>
+      <a class="fontVertical" href="./work.html">Work Experience</a>
+      <div class="vertical"></div>
+      <a class="fontVertical" href="#">Contact Me</a>
+      <div class="vertical"></div>
+    </nav>
+
+    <hr />
+
+    <h1>Contact Me</h1>
+
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+      <div class="input-group">
+        <p class="textContent">Enter your info..</p>
+        
+        <div class="input">
+          <label for="name">Your Name</label>
+          <input type="text" name="Name"/>
+        </div>
+
+        <div class="input">
+          <label for="email">Your E-mail</label>
+          <input type="text" name="Email"/>
+        </div>
+
+        <div class="input">
+          <label for="Gender">Gender</label>
+          <select name="Gender" id="Gender">
+            <option disabled selected>select..</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="input">
+          <label for="Message">Message</label>
+          <textarea name="Message" id="Message"></textarea>
+        </div>
+
+        <div class="button">
+          <input type="submit" value="Send" />
+          <input type="reset" value="Clear" />
+        </div>
+
+      </div>
+    </form>
+  </body>
+</html>
